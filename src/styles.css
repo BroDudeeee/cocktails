@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 3px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+
+  background-color: white;
+  position: sticky;
+  top: 0;
+  text-transform: uppercase;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin-left: 1rem;
+}
+
+.homeContainer {
+  background-color: white;
+  width: fit-content;
+  margin: 7rem auto;
+  padding: 2rem;
+  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.homeContainer:hover {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  border: none;
+  background-color: whitesmoke;
+  outline: none;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.cocktailsContainer {
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 60rem;
+  margin: auto;
+}
+
+.singleCocktail {
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.1);
+  width: 18rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  text-transform: uppercase;
+}
+.cocktailImg {
+  width: 18rem;
+  height: 15rem;
+  border-radius: 5px 5px 0 0;
+}
+
+.cocktailName {
+  padding: 3rem 1rem 2rem 1rem;
+}
+
+.aboutContainer {
+  margin: 3rem auto;
+  max-width: 40rem;
+  padding: 1rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.singleCocktailContainer {
+  width: 30rem;
+  margin: 4rem auto;
+}
+
+.singleCocktailImg {
+  width: 30rem;
+  height: 25rem;
+  border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+  .cocktailsContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .singleCocktailContainer {
+    width: 35rem;
+    margin: 4rem auto;
+  }
+
+  .singleCocktailImg {
+    width: 35rem;
+    height: 25rem;
+  }
+}
+@media (min-width: 800px) {
+  .cocktailsContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .singleCocktailContainer {
+    width: 40rem;
+    margin: 4rem auto;
+  }
+
+  .singleCocktailImg {
+    width: 40rem;
+    height: 25rem;
+  }
+}
